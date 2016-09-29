@@ -7,13 +7,13 @@ Laravel php-oauth2-server
 
 前端实在不是我所擅长的，因此很无耻的保留了原有demo上的所有样式~<br />
 
-注意事项
 ================
-使用的mysql，因此需要初始化mysql数据库表，初始化在oauth2-server-php上有提供方法，大家可以自行研究，不放在这里 <br />
+##注意事项
+使用的mysql，因此需要初始化mysql数据库表，初始化在oauth2-server-php上有提供方法，大家可以自行研究 <br />
 使用过程中，注意oauth_clients表中使用的client的grant_types要给上足够的权限，否则很多操作没法使用 <br />
 
 
 ======================
 ##参考内容
-[oauth2-server-php](https://github.com/bshaffer/oauth2-server-php)
+[oauth2-server-php](https://github.com/bshaffer/oauth2-server-php) <br />
 [oauth2-demo-php](https://github.com/bshaffer/oauth2-demo-php)
