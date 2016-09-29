@@ -1,27 +1,17 @@
-# Laravel PHP Framework
+Laravel php-oauth2-server
+=================
+前一段时间做了pc上的OAuth2 Client, 主要是参照使用微信、微博、qq提供的SDK和文档对接第三方。
+偶然在github上看到了使用php实现的OAuth2 Server(https://github.com/bshaffer/oauth2-server-php), 自然要研究一番。
+秉持着实践为主的研究策略，找到了基于该server的一个demo(https://github.com/bshaffer/oauth2-demo-php), 该demo使用的是silex框架。直接部署好环境，运行，没有问题~~
+但是，该demo使用的数据库链接方式是sqlite。。加上最近看了一段时间laravel框架，因此有动手将该demo改成laravel框架加上mysql的版本
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+前端实在不是我所擅长的，因此很无耻的保留了原有demo上的所有样式~
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+================
+```使用的mysql，因此需要初始化mysql数据库表，初始化在oauth2-server-php上有提供方法，大家可以自行研究，不放在这里了```
+```使用过程中，注意oauth_clients表中使用的client的grant_types要给上足够的权限，否则很多操作没法使用
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
-
-## Official Documentation
-
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+======================
+##
+[oauth2-server-php](https://github.com/bshaffer/oauth2-server-php)
+[oauth2-demo-php](https://github.com/bshaffer/oauth2-demo-php)
